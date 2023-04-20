@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/restaurant.jpg);
+    background-size: cover;
+}
+.wraper{
+    background: #555;
+}
+.navbar{
+    /*이건 뭔가? 네브바가 비어있으면 로고 옆으로 배치된다.*/
+    display: flex;
+    /*알아서 등분이 된다. 이건 뭔가?*/
+    justify-content: space-evenly;
+    /*세로로 가운데정렬*/
+    align-items: center;
+    height: 65px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 5px 6px 20px rgba(11, 48, 255, .952);
+}
+.logo h1{
+    color: #f5f5f5;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+.liens{
+    /*어떤뜻인가요?*/
+    display: inline-flex;
+    color: #fff;
+}
+.liens .lien{
+    list-style: none;
+}
+.liens .lien a{
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+.liens .lien a:hover{
+    background: rgba(119, 174, 246, .924);
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in;
+    box-shadow: 5px 6px 20px rgba(11, 48, 255, .952);
+}
+.sous-menu .liens{
+    /*왜 쓰는지 잘 모르겠어요*/
+    position: absolute;
+    display: none;
+    background: #555;
+    width: 250px;
+    top: 65px;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.sous-menu .liens .lien{
+    margin: 20px 0;
+}
+.lien-deroulant:hover .sous-menu .liens{
+    /*무슨뜻인가요?*/
+    display: block;
+    top: 55px;
+}
+.megamenu{
+    /*왜주나요?*/
+    position: absolute;
+    background: #555;
+    width: 80%;
+    top: 65px;left: 10px;
+    padding: 20px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: none;
+}
+.lien-mega:hover .megamenu{
+    display: block;
+    transition: all 0.3s ease-in;
+}
+
+/*정렬때문에 넣어둠*/
+.container{
+    /*어떨때 넣지요?*/
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.colone ul{
+    display: block;
+}
+.colone ul li{
+    margin: 20px 0;
+}
+.colone .logo{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 1rem;
+    border: 3px solid #f5f5f5;
+}
+.colone h2{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+body {
+    color: #222328;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+   width: 800px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.modal .modal_inner button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+
+header nav {
+    float: right;
+    width: 700px;
+    padding-top: 30px;
+}
+
+header nav ul.gnb {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+header nav ul.gnb > li {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+header nav ul.gnb > li > a {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+header nav ul.gnb > li:hover > a {
+    background: #5f1c25;
+    color: #fff;
+}
+
+header nav ul.gnb > li > ul.sub {
+    width: 100%;
+    line-height: 40px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background: #fff;
+    height: 160px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+header nav ul.gnb > li > ul.sub > li {
+    width: 100%;
+    height: 40px;
+}
+
+header nav ul.gnb > li > ul.sub > li:hover {
+    background: #5f1c25;
+    color: #fff;
+}
+
+header nav ul.gnb > li > ul.sub > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    background: #bbb;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide ul.slide_all {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.slide ul.slide_all > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.contents {
+    width: 100%;
+    height: 200px;
+}
+
+.contents section {
+    float: left;
+
+}
+
+.contents .notice_gal {
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+.contents .notice_gal h3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contents .notice_gal h3.r100 {
+    left: 100px;
+}
+
+.contents .notice_gal h3.on {
+    background: #5f1c25;
+}
+
+.contents .notice_gal ul {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none;
+}
+
+.contents .notice_gal ul.on {
+    display: block;
+}
+
+.contents .notice_gal ul.notice {
+    width: 100%;
+}
+
+.contents .notice_gal ul.notice li {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+
+.contents .notice_gal ul.notice li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .notice_gal ul.notice li a:hover {
+    color: #ccc;
+}
+
+.contents .notice_gal ul.notice li a .day {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 12px;
+}
+
+.contents .notice_gal ul.gal {
+    width: 100%;
+}
+
+.contents .notice_gal ul.gal li {
+    width: 150px;
+    height: 150px;
+    float: left;
+    background-size: 150px;
+    margin-left: 12px;
+    margin-top: 12px;
+    text-indent: -9999px;
+}
+
+.contents .notice_gal ul.gal li:nth-child(1) {
+    background-image: url(../images/gal1.jpg);
+}
+
+.contents .notice_gal ul.gal li:nth-child(2) {
+    background-image: url(../images/gal2.jpg);
+}
+
+.contents .notice_gal ul.gal li:nth-child(3) {
+    background-image: url(../images/gal3.jpg);
+}
+
+.contents .notice_gal ul.gal li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .banner_sub {
+    width: 350px;
+    height: 200px;
+}
+
+.contents .baro {
+    width: 350px;
+    height: 200px;
+}
+
+.contents .baro h2 {
+    background: #5f1c25;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.contents .baro h3 {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #333;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 1px solid #fff;
+
+}
+
+.contents .baro h3 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .baro h3 a:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
+
+footer p {
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+
+footer ul.copy {
+    float: left;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+footer ul.copy li {
+    float: left;
+    margin-right: 20px;
+}
+
+footer .sns {
+    float: left;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}

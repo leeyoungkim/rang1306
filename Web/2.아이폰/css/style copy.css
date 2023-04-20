@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  /*     color: #333; */
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 89px;
+  /* border-bottom: 1px solid #e9b0b0; */
+  position: relative;
+  line-height: 89px;
+}
+
+#header .logo {
+  width: 196px;
+  float: left;
+  position: absolute;
+  left: 63px;
+}
+
+
+.search {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  float: right;
+  background-image: url(../img/icon_Search.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  right: 63px;
+  top: 31px;
+}
+
+/* #header:after{
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+.menu {
+  width: 440px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: #686a67;
+  /* border: 1px solid #ebb0b0; */
+}
+
+.menu li {
+  float: left;
+  width: 110px;
+  /* border-bottom: 1px solid #dfb5b5; */
+  text-align: center;
+}
+
+/* .menu:after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+/* header end */
+
+
+/*메인 슬라이더 시작*/
+#mainimg {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background-image: url(../img/mainimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.left_btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 63px;
+  top: 320px;
+}
+
+.left_btn img {
+  width: 100%;
+}
+
+.right_btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 63px;
+  top: 320px;
+}
+
+.right_btn img {
+  width: 100%;
+}
+
+
+#mainimg .inner .text_box {
+  position: absolute;
+  top: 214px;
+  left: 448px;
+  text-align: center;
+}
+
+#mainimg .inner .text_box h1 {
+  font-size: 80px;
+}
+#mainimg .inner .text_box p {
+  font-size: 25px;
+  margin: 40px 0;
+}
+#mainimg .inner .text_box .btn {
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  background: #f0514b;
+  border-radius: 100px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* 메인 슬라이드 끝 */
+
+
+/*콘텐츠 시작*/
+#contents>.box1{
+    height: 800px;
+    width: 100%;
+ /*    background-color: #a07171; */
+}
+
+#contents>.box1>.box1_left{
+    width: 35%;
+    height: 800px;
+    background-color: #f3364c;
+    color: #FFF;
+    text-align: center;
+    float: left;
+}
+
+#contents>.box1>.box1_left .text_box{
+    padding-top: 350px;
+}
+
+#contents>.box1>.box1_right{
+    width: 65%;
+    height: 800px;
+    background-image: url(../img/do_right1.jpg);
+    /*이미지는 아래로 쌓이는 형식이 기본이라서
+    Float left , right를 해줘야 한다.*/
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+/* .box1:after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+.btn{
+    width: 180px;
+    height: 45px;
+    background-color: #f0514b;
+    border-radius: 100px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#contents>.box2{
+    height: 800px;
+    width: 100%;
+}
+
+#contents>.box2>.box2_right{
+    width: 35%;
+    height: 800px;
+    background-color: #00c389;
+    float: right;
+    text-align: center;
+    color:#FFF;
+}
+
+
+#contents>.box2>.box2_left{
+    width: 65%;
+    height: 800px;
+    background-image: url(../img/box2_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    float: left;
+}
+
+#contents>.box2>.box2_right .text_box{
+  padding-top: 310px;
+}
+
+/* .box2:after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+
+/*box2 end*/
+
+#contents>.box3{
+    height: 950px;
+    width: 100%;
+}
+
+#contents>.box3>.inner>h3{
+    color: #eb6969;
+    padding-top: 153px;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 80px;
+
+}
+#contents>.box3>.inner>.box3_imgset>.list{
+    width: calc(100%/3 - 2%);
+    height: 580px;
+    float: left;
+    text-align: center;
+}
+
+/* .box3_imgset:after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+.list:nth-child(2),
+.list:nth-child(3){
+  margin-left: calc(6%/2);
+}
+
+.box3_imgset>.list:nth-child(1)>div{
+    height: 500px;
+    background-image: url(../img/icon1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box3_imgset>.list:nth-child(2)>div{
+    height: 500px;
+    background-image: url(../img/icon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box3_imgset>.list:nth-child(3)>div{
+    height: 500px;
+    background-image: url(../img/icon3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.box3_imgset p{
+    font-size: 25px;
+    color: #e44646;
+    margin-top: 40px;
+}
+
+/*box3 end*/
+
+/*box4 start*/
+#contents>.box4{
+  height: 800px;
+  width: 100%;
+  background-color: #ffc300;
+}
+
+#contents>.box4>.inner>h3{
+  color: #FFF;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 65px;
+  padding-top: 143px;
+}
+
+#contents>.box4>.inner>.box4_imgset>.list{
+  width: calc(100%/3 - 2%);
+  height: 580px;
+  float: left;
+  text-align: center;
+}
+
+/* .box4_imgset:after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+#contents>.box4>.inner>.box4_imgset>.list:nth-child(1)>div{
+  height: 385px;
+  background-image: url(../img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contents>.box4>.inner>.box4_imgset>.list:nth-child(2)>div{
+  height: 385px;
+  background-image: url(../img/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contents>.box4>.inner>.box4_imgset>.list:nth-child(3)>div{
+  height: 385px;
+  background-image: url(../img/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contents>.box4>.inner>.box4_imgset>.list>p{
+  font-size: 20px;
+  color: #FFF;
+}
+
+.box5{
+  height: 720px;
+  width: 100%;
+  background-color: #006341;
+  color: #FFF;
+  position: relative;
+}
+
+.box5>.inner>h3{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 135px;
+}
+
+.box5>.inner>.box5_contentset>.content_img{
+  float: left;
+}
+
+.box5>.inner>.box5_contentset>.content_text{
+  float: right;
+}
+
+/* .box5_contentset:after {
+  display: block;
+  content: "";
+  clear: both;
+} */
+

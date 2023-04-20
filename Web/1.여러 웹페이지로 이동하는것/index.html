@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video</title>
+</head>
+<body>
+    <selection class="showcase">
+        <header>
+            <h2 class="logo">Traval</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="img/Pexels Videos.mp4" muted loop autoplay></video>
+        <!-- 진하게 주려고 -->
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Naver Stop To</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Soluta, iusto est officia similique odit eligendi, magnam ad facere vitae,
+                cumque id quos saepe incidunt beatae qui dolor quisquam modi libero.</p>
+            <a href="#">Explore</a>
+        </div>
+        
+
+        <div class="social">
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+        </div>
+    </selection>
+
+    <div class="menu">
+        <ul>
+            <li><a href="2.coffee/index.html">Coffee</a></li>
+            <li><a href="3.IMAGE_GALLERY/index.html">Image Gallery</a></li>
+            <li><a href="4.Video/index.html">Video</a></li>
+<!--             <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>

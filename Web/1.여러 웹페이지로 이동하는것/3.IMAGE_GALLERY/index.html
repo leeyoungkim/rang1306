@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE_GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>image gallery</h1>
+        <a href="../index.html"><i class='bx bx-bowl-rice'></i></a>
+        <div class="image-container">
+            <div class="image"><img src="images/1...jpg" alt=""></div>
+            <div class="image"><img src="images/2...jpg" alt=""></div>
+            <div class="image"><img src="images/3...jpg" alt=""></div>
+            <div class="image"><img src="images/4...jpg" alt=""></div>
+            <div class="image"><img src="images/5...jpg" alt=""></div>
+            <div class="image"><img src="images/6...jpg" alt=""></div>
+            <div class="image"><img src="images/7.jpg" alt=""></div>
+            <div class="image"><img src="images/8.jpg" alt=""></div>
+            <div class="image"><img src="images/9.jpg" alt=""></div>
+            <div class="image"><img src="images/10.jpg" alt=""></div>
+            <div class="image"><img src="images/11.jpg" alt=""></div>
+            <div class="image"><img src="images/12.jpg" alt=""></div>
+            <div class="image"><img src="images/13.jpg" alt=""></div>
+            <div class="image"><img src="images/pexels-markus-distelrath-2233442.jpg" alt=""></div>
+            <div class="image"><img src="images/15.jpg" alt=""></div>
+        </div>
+        <div class="popup-image">
+            <!-- 기본적으로 제공해주는 닫기 버튼 -->
+            <span>&times</span>
+            <img src="images/14.jpg" alt="">
+
+        </div>
+    </div>
+    <script>
+        /*팝업창 설정할때 forEach*/
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                /*닫기버튼 할 때 쓰임*/
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
