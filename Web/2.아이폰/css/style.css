@@ -131,7 +131,7 @@ li>li>a:active, a:link{
 
 .slide1 {background: url(../img/slide1.jpg) no-repeat center/cover;}
 .slide2 {background: url(../img/slide2.jpg) no-repeat center/cover;}
-.slide5 {background: url(../img/slide5.jpg) no-repeat center/cover;}
+.slide3 {background: url(../img/slide5.jpg) no-repeat center/cover;}
 
 
 .left_btn {
@@ -343,17 +343,22 @@ li>li>a:active, a:link{
 }
 
 .box3_imgset{
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  width: 1200px;
+  height: 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   transform: scale(1);
-
+  
 }
 
 #contents>.box3>.inner>.box3_imgset>.list{
-    width: calc(100%/4 - 2%);
-    height: 580px;
-    float: left;
-    text-align: center;
-    
+  width: calc(100%/4 - 2%);
+  height: 580px;
+  float: left;
+  text-align: center;
+  
 }
 
 .box3_imgset:after {
@@ -369,32 +374,36 @@ li>li>a:active, a:link{
 }
 
 .box3_imgset>.list:nth-child(1)>div{
-    height: 500px;
-    background-image: url(../img/box3_111.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 30px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  background-image: url(../img/box3_111.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
 }
 .box3_imgset>.list:nth-child(2)>div{
-    height: 500px;
-    background-image: url(../img/box3_222.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 30px;
-
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  background-image: url(../img/box3_222.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
+  
 }
 .box3_imgset>.list:nth-child(3)>div{
-    height: 500px;
-    background-image: url(../img/box3_333.jpg);
-    background-repeat: no-repeat;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  background-image: url(../img/box3_333.jpg);
+  background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 30px;
-
-}
-.box3_imgset>.list:nth-child(4)>div{
+    
+  }
+  .box3_imgset>.list:nth-child(4)>div{
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
     height: 500px;
     background-image: url(../img/box3_444.jpg);
     background-repeat: no-repeat;
@@ -411,7 +420,7 @@ li>li>a:active, a:link{
 }
 
 .box3_imgset>.list:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 300ms;
 }
 

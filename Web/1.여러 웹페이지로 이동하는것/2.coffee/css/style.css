@@ -3,7 +3,7 @@
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
-    --bg:#010103;
+    --bg:#ffee90;
     --border:.1rem solid rgba(255,255,255,.3);
 }
 *{
@@ -43,9 +43,10 @@ section{
 }
 .heading{
     text-align: center;
-    color: #fff;
+    color: #cccccc;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
+    padding-top: 2rem;
     font-size: 4rem;
 }
 .heading span{
@@ -55,8 +56,8 @@ section{
 }
 
 .header{
-    color: #fff;
-    background: #b14646;
+    color: #333;
+    background: #f6f5ef;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,8 +72,8 @@ section{
     height: 6rem;
 }
 .header .navbar a{
-    margin: 0 1rem;
-    color: #fff;
+    margin: 0 3rem;
+    color: #333;
     font-size: 1.6rem;
 }
 .header .navbar a:hover{
@@ -97,14 +98,18 @@ section{
     margin-top: 1rem;
     /*버튼을 할때는 줘야함*/
     display: inline-block;
-    padding: .9rem 3rem;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--main-color);
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    color: #014938;
+    background: rgba(255,255,255,0);
+    border: 2px solid #014938;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 .btn:hover{
-    letter-spacing: .2rem;
+    background: #014938;
+    color: #fff;
+    /* letter-spacing: .2rem; */
 }
 .header .search-form{
     position: absolute;
@@ -185,10 +190,13 @@ section{
 
 /*home starts*/
 .home{
-    min-height: 100vh;
+    min-height: 65rem;
+    width: 100%;
     display: flex;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    background: url(../images/home-img.jpeg);
+    background: url(../images/2023_spring2_promotion_bg_1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -197,7 +205,7 @@ section{
 }
 .home .content h3{
     font-size: 6rem;
-    color: #fff;
+    color: #014938;
     text-transform: uppercase;
 }
 .home .content p{
@@ -205,22 +213,37 @@ section{
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #eee;
+    color: #014938;
+}
+.home .content_right{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.home .content_right .drink1{
+    margin-top: 10rem;
+}
+.about{
+    margin: 0 auto;
+    background: #1e3932;
 }
 .about .row{
     display: flex;
     align-items: center;
-    background: var(--black);
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
 .about .row .image{
-    flex: 1 1 45rem;
+    /* flex: 1 1 45rem; */
+    align-items: center;
+    margin-right: 5rem;
 }
 .about .row .image img{
     width: 100%;
 }
 .about .row .content{
-    flex: 1 1 45rem;
+    /* flex: 1 1 45rem; */
     padding: 2rem;
 }
 .about .row .content h3{
@@ -232,28 +255,67 @@ section{
     color: #fff;
     line-height: 1.8;
 }
-
+.btn_rewards{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /*버튼을 할때는 줘야함*/
+    display: inline-block;
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #00704a;
+    border: 2px solid #00704a;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn_rewards:hover{
+    background: #014938;
+    color: #fff;
+}
+.btn_rewards_new{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    /*버튼을 할때는 줘야함*/
+    display: inline-block;
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: rgba(255,255,255,0);
+    border: 2px solid #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn_rewards_new:hover{
+    background: #014938;
+    color: #fff;
+    /* letter-spacing: .2rem; */
+}
 /* menu start */
+.menu{
+    background: #eaffdc;
+}
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 .menu .box-container .box{
-    padding: 5rem;
+    padding: 2rem;
     text-align: center;
     border: var(--border);
+    align-items: center;
+    margin: 0 auto;
 }
 .menu .box-container .box img{
-    height: 10rem;
+    height: 30rem;
 }
 .menu .box-container .box h3{
-    color: #fff;
+    color: #333;
     font-size: 2rem;
     padding: 1rem 0;
 }
 .menu .box-container .box .price{
-    color: #fff;
+    color: #333;
     font-size: 2.5rem;
     padding: .5rem 0;
 }
@@ -264,13 +326,15 @@ section{
     font-weight: lighter;
 }
 .menu .box-container .box:hover{
-    background: #fff;
+    background: rgba(8, 58, 6, 0.1);
 }
-.menu .box-container .box:hover > *{
-    color: var(--black);
+.menu .box-container .box:hover > .btn{
 }
 
 /*products stars*/
+.products{
+    background: #1e3932;
+}
 .products .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -298,6 +362,7 @@ section{
 }
 .products .box-container .box .image img{
     height: 25rem;
+    border-radius: 50%;
 }
 .products .box-container .box .content h3{
     color: #fff;
@@ -322,6 +387,9 @@ section{
 }
 
 /* review starts */
+.review{
+    background: #000;
+}
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -340,8 +408,9 @@ section{
     line-height: 1.8;
 }
 .review .box-container .box .user{
-    border-radius: 50%;
-    width: 10rem;
+    border-radius: 10%;
+    width: 35rem;
+    height: 20rem;
     object-fit: cover;
 }
 .review .box-container .box h3{
@@ -356,7 +425,9 @@ section{
 }
 
 /* contact stats */
-
+.contact{
+    background: #eaffdc;
+}
 .contact .row{
     display: flex;
     background: var(--black);
@@ -370,7 +441,7 @@ section{
 }
 .contact .row form{
     flex: 1 1 45rem;
-    padding: 5rem 2rem;
+    padding: 4.8rem 2rem;
     text-align: center;
 
 }
@@ -384,11 +455,11 @@ section{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--bg);
+    background: #fff;
     border: var(--border);
 }
 .contact .row form .inputBox span{
-    color: #fff;
+    color: #333;
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -397,11 +468,31 @@ section{
     padding: 2rem;
     font-size: 1.7rem;
     color: #fff;
-    background: none;
+    background: #fff;
     text-transform: none;
+}
+.btn_contact{
+    margin-top: 1rem;
+    /*버튼을 할때는 줘야함*/
+    display: inline-block;
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    color: #00e0ac;
+    background: rgba(255,255,255,0);
+    border: 2px solid #014938;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn_contact:hover{
+    background: #014938;
+    color: #fff;
+    /* letter-spacing: .2rem; */
 }
 
 /* blogs starts */
+.blogs{
+    background: #014938;
+}
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
